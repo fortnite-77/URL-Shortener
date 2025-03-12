@@ -12,8 +12,6 @@ function generateShortCode() {
   return crypto.randomBytes(3).toString('hex');
 }
 
-
-
 app.post('/shorten', (req, res) => {
   const { url } = req.body;
   
